@@ -9,14 +9,14 @@ export default function Home() {
       <h2>{name("Jacob", "Devereaux")}</h2>
       <DeviceChart
         options={{
-          colors: ["#0f6375", "#f5a623", "#f5a623"],
+          colors: ["#07b521", "#b8db07", "#088fa3"],
           labels: ["Desktop", "Mobile", "Tablet"],
         }}
       />
 
       <DeviceChart
         options={{
-          colors: ["#c00", "#3469a7", "#c1b01e"],
+          colors: ["#4a2c2f", "#a3088c", "#c41104"],
           labels: ["Smartphones", "laptops", "ipads"],
         }}
       />
