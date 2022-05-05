@@ -1,18 +1,18 @@
 import React from "react";
 import ReactApexChart from "react-apexcharts";
 
-export default class RadialChart extends React.Component {
+export default class ImgChart extends React.Component {
   constructor(props) {
     super(props);
 
     this.state = {
-      series: [50],
+      series: [85],
       options: {
         chart: {
           height: 350,
           type: "radialBar",
           toolbar: {
-            show: false,
+            show: true,
           },
         },
         plotOptions: {
@@ -68,21 +68,13 @@ export default class RadialChart extends React.Component {
           },
         },
         fill: {
-          type: "gradient",
-          gradient: {
-            color: "#41ab0c",
-            shade: "dark",
-            type: "horizontal",
-            shadeIntensity: 0.5,
-            gradientToColors: ["#c7101f"],
-            inverseColors: true,
-            opacityFrom: 1,
-            opacityTo: 1,
-            stops: [0, 100],
+        type: 'image',
+        image: {
+          src: ['../../assets/images/sky.jpg'],
           },
         },
         stroke: {
-          lineCap: "",
+          lineCap: "round",
         },
         labels: ["Percent"],
       },

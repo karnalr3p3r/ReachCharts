@@ -3,6 +3,8 @@ import DeviceChart from "./DeviceChart";
 import Layout from "./Layout";
 import { name } from "../utils/generators";
 import RadialChart from "./RadialGradiantChart";
+import ImgChart from "./ImgRadialChart";
+import Mytimeline from "./timelineChart";
 
 export default function Home() {
   return (
@@ -23,6 +25,8 @@ export default function Home() {
       />
 
       <RadialChart />
+      <ImgChart />
+      <myTimeline />
 
     </Layout>
   );
