@@ -1,10 +1,12 @@
 import * as React from "react";
 import DeviceChart from "./DeviceChart";
 import Layout from "./Layout";
+import { name } from "../utils/generators";
 
 export default function Home() {
   return (
     <Layout>
+      <h2>{name("Jacob", "Devereaux")}</h2>
       <DeviceChart
         options={{
           colors: ["#0f6375", "#f5a623", "#f5a623"],
