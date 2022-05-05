@@ -2,6 +2,7 @@ import * as React from "react";
 import DeviceChart from "./DeviceChart";
 import Layout from "./Layout";
 import { name } from "../utils/generators";
+import RadialChart from "./RadialGradiantChart";
 
 export default function Home() {
   return (
@@ -20,6 +21,9 @@ export default function Home() {
           labels: ["Smartphones", "laptops", "ipads"],
         }}
       />
+
+      <RadialChart />
+
     </Layout>
   );
 }
